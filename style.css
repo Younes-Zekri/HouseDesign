@@ -1,0 +1,547 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.banner{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url("pics/bgimage.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.logo{
+  width: 200px;
+  margin-left: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0);
+}
+.navbar{
+  width: 85%;
+  margin: auto;
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+button a{
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.navbar ul li:hover::after{
+  width: 100%;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) ;
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+.content button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid #009688;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+.content span{
+  background: #009688;
+  height: 100%;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.content button:hover span{
+  width: 100%;
+}
+.content button:hover{
+  border: none;
+}
+
+
+/*  SignUp  */
+
+
+.login{
+  display: flex;
+}
+.pic{
+  cursor: pointer;
+  width: 60%;
+  height: 100vh;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.75)),url("pics/logp2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.login h2{
+  position: absolute;
+  width: 50%;
+  display: inline-block;
+  color: white;
+  text-shadow: rgba(0, 0, 0, 0.945) 2px 0 10px;
+  font-size: 54px;
+  margin-block-start: 40px;
+  margin-block-end: 50px;
+  margin-inline-start: 70px;
+  margin-inline-end: 100px;
+  font-weight:bold;
+}
+.contain{
+  margin-left: 26%;
+}
+.contain h1{
+ color: white; 
+ font-size:20px; 
+ margin-top: 10px;
+}
+.contain p{
+  font-size: 14px;
+  margin-top: 3px;
+  margin-bottom: 15px;
+  color: rgba(255, 255, 255, 0.507);
+}
+.contain span{
+  color: #1591dd;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.contain .fp{
+  margin-top: 10px;
+  margin-left: 38%;
+}
+.contain span:hover{
+  text-decoration: none;
+  color: #0079c4;
+}
+.aside{
+  width: 40%;
+  background-color: rgba(0, 0, 0, 0.945);
+}
+.aside .logo{
+  cursor: pointer;
+  height: 140px;
+  width: 210px;
+  margin-top: 50px;
+  margin-left: 12%;
+  margin-bottom: -20px;
+}
+.contain input[type="text"] , input[type="password"]{
+  color: white;
+  box-sizing: border-box;
+  border: 1px solid rgba(204, 204, 204, 0);
+  padding: 15px 150px 15px 10px;
+  margin-top: 10px;
+  background-color: #262629;
+  border-radius: 3px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 1px solid #1591dd;
+  -webkit-text-fill-color: rgb(255, 255, 255);
+  transition: background-color 5000s ease-in-out 0s;
+}
+.contain input[type="text"]:hover{
+  border: 1px solid #1591dd;
+}
+#password:hover , #password:focus{
+  border: 1px solid #1591dd;
+}
+.contain .button{
+  font-weight: 700;
+  background-color: #1591dd;
+  vertical-align: middle;
+  color: white;
+  padding: 13px 145px;
+  line-height: normal;
+  white-space: nowrap;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}
+.divider p{
+  text-align: center;
+  margin-top: 30px;
+  margin-left: -32%;
+}
+.check ,label ,.check a{
+  cursor: pointer;
+  width: 350px;
+  line-height: 1.5;
+  color: white;
+  margin: 15px 0 20px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.507);
+}
+.contain .hr{
+  margin-top: 20px;
+  margin-bottom: 12px;
+  margin-left: 2%;
+  width: 305px;
+}
+.fb {
+  position: relative;
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+  margin-left: 20%;
+  cursor: pointer;
+}
+.ggl {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  margin-top: 10px;
+  margin-left: 8.5%;
+  cursor: pointer;
+}
+
+
+/*  BedRoom Page  */
+
+::-webkit-scrollbar {
+  display: none;
+}
+body{
+background-color: #61616111;
+}
+.logo{
+width: 200px;
+margin-left: 100px;
+cursor: pointer;
+}
+.navbar-gallery{
+background-color: rgb(255, 255, 255);
+width: 100%;
+margin: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+transition: 0.5s;
+}
+.navbar-gallery ul{
+  margin-right: 120px;
+}
+.navbar-gallery ul li{
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+position: relative;
+}
+.navbar-gallery ul li a{
+font-weight:bolder; 
+text-decoration: none;
+color: rgb(0, 0, 0);
+text-transform: uppercase;
+}
+.navbar-gallery ul li.bed::after{
+width: 100%;
+}
+.navbar-gallery ul li.din::after{
+width: 100%;
+}
+.navbar-gallery ul li.kit::after{
+width: 100%;
+}
+.navbar-gallery ul li.by::after{
+width: 100%;
+}
+
+.navbar-gallery ul li::after{
+content: '';
+height: 3px;
+width: 0;
+background: #009688;
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+.navbar-gallery ul li:hover::after{
+width: 100%;
+}
+
+/*  Gallery  */
+
+.wrapper-gallery{
+width: 100%;
+margin-top: 50px;
+margin-left: 12%;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
+grid-template-rows: auto;
+grid-gap: 20px;
+grid-template-areas:
+/* "h2 h2 h2" */
+"img1 img2 img3"
+"img4 img5 img6";
+}
+.wrapper-gallery .gallery-img {
+width: 100%;
+height: 420px;
+margin-left: 12px;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+cursor: pointer;
+}
+
+/*  BedRoom Images  */
+
+#bedroom-gallery{
+margin-bottom: 10px;
+} 
+#bedroom-gallery .img1{
+grid-area: img1;
+background-image: url("pics/bedroom/img1.jpg");
+}
+#bedroom-gallery .img2{
+grid-area: img2;
+background-image: url("pics/bedroom/img2.jpg");
+}
+#bedroom-gallery .img3{
+grid-area: img3;
+background-image: url("pics/bedroom/img3.jpg");
+}
+#bedroom-gallery .img4{
+grid-area: img4;
+background-image: url("pics/bedroom/img4.jpg");
+}
+#bedroom-gallery .img5{
+grid-area: img5;
+background-image: url("pics/bedroom/img5.jpg");
+}
+#bedroom-gallery .img6{
+grid-area: img6;
+background-image: url("pics/bedroom/img6.jpg");
+}
+
+/*  Dining Images  */
+
+#dining-gallery{
+  margin-bottom: 10px;
+  } 
+  #dining-gallery .img1{
+  grid-area: img1;
+  background-image: url("pics/dining/img1.jpg");
+  }
+  #dining-gallery .img2{
+  grid-area: img2;
+  background-image: url("pics/dining/img2.jpg");
+  }
+  #dining-gallery .img3{
+  grid-area: img3;
+  background-image: url("pics/dining/img3.jpg");
+  }
+  #dining-gallery .img4{
+  grid-area: img4;
+  background-image: url("pics/dining/img4.jpg");
+  }
+  #dining-gallery .img5{
+  grid-area: img5;
+  background-image: url("pics/dining/img5.jpg");
+  }
+  #dining-gallery .img6{
+  grid-area: img6;
+  background-image: url("pics/dining/img6.jpg");
+  }
+  
+/*  kitchen Images  */
+
+#kitchen-gallery{
+  margin-bottom: 10px;
+  } 
+  #kitchen-gallery .img1{
+  grid-area: img1;
+  background-image: url("pics/kitchen/img1.jpeg");
+  }
+  #kitchen-gallery .img2{
+  grid-area: img2;
+  background-image: url("pics/kitchen/img2.jpeg");
+  }
+  #kitchen-gallery .img3{
+  grid-area: img3;
+  background-image: url("pics/kitchen/img3.jpeg");
+  }
+  #kitchen-gallery .img4{
+  grid-area: img4;
+  background-image: url("pics/kitchen/img4.jpeg");
+  }
+  #kitchen-gallery .img5{
+  grid-area: img5;
+  background-image: url("pics/kitchen/img5.jpeg");
+  }
+  #kitchen-gallery .img6{
+  grid-area: img6;
+  background-image: url("pics/kitchen/img6.jpeg");
+  }
+
+
+/*  Backyard Images  */
+
+#by-gallery{
+  margin-bottom: 10px;
+  } 
+  #by-gallery .img1{
+  grid-area: img1;
+  background-image: url("pics/backyard/img1.jpeg");
+  }
+  #by-gallery .img2{
+  grid-area: img2;
+  background-image: url("pics/backyard/img2.jpeg");
+  }
+  #by-gallery .img3{
+  grid-area: img3;
+  background-image: url("pics/backyard/img3.jpeg");
+  }
+  #by-gallery .img4{
+  grid-area: img4;
+  background-image: url("pics/backyard/img4.jpeg");
+  }
+  #by-gallery .img5{
+  grid-area: img5;
+  background-image: url("pics/backyard/img5.jpeg");
+  }
+  #by-gallery .img6{
+  grid-area: img6;
+  background-image: url("pics/backyard/img6.jpeg");
+  }
+
+
+
+/* gallery images title */
+
+.gallery-img div {
+width: 100%;
+height: 100%;
+background-color: black;
+opacity: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.gallery-img a {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color: white;
+text-decoration: none;
+text-transform: uppercase;
+}
+.gallery-img div:hover{
+opacity: 0.8;
+transition: all ease-in-out 100ms;
+}
+
+/* popup window when clicked */
+
+.img-window {
+width: 100vw;
+height: 100vh;
+background-color: rgb(0, 0, 0, 0.8);
+position: fixed;
+top: 0;
+left: 0;
+cursor: pointer;
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 100;
+}
+.img-window img {
+margin-left: 30px;
+margin-right: 30px;
+max-height: 80vh;
+max-width: 80vw;
+}
+
+/* Next img  */
+
+.img-btn-next {
+display: block;
+padding: 6px 10px;
+border-radius: 4px;
+background-color: #1111119c;
+position: fixed;
+top: 48vh;
+z-index: 500;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+cursor: pointer;
+text-transform: uppercase;
+}
+.img-btn-next:hover {
+opacity: 0.8;
+}
+
+/* prev img  */
+
+.img-btn-prev {
+display: block;
+padding: 6px 10px;
+border-radius: 4px;
+background-color: #1111119c;
+position: fixed;
+top: 48vh;
+z-index: 500;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+cursor: pointer;
+text-transform: uppercase;
+}
+.img-btn-prev:hover {
+opacity: 0.8;
+}

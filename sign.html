@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>SignUp</title>
+  </head>
+  <body>
+    <div class="login">
+      <h2>
+        Find inspiration to furnish <br />
+        and decorate <br />
+        your Home!
+      </h2>
+      <figure class="pic"></figure>
+      <div class="aside">
+        <form class="contain">
+          <img
+            onclick="window.location.href='index.html';"
+            class="logo"
+            src="pics//logo.png"
+          />
+          <h1>Sing up</h1>
+          <p>
+            Already have an account 
+            <span onclick="window.location.href='log.html';">
+              Log in</span
+            >
+          </p>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="Username"
+          />
+          <input type="text" name="email" id="email" placeholder="Email" />
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="Password"
+          />
+          <br />
+          <div class="check">
+            <input type="checkbox" id="check" />
+            <label for="check"
+              >I have read and accept the
+              <a href="#">General service conditions</a></label
+            >
+          </div>
+
+          <input type="submit" class="button" value="Sign Up" />
+          <div class="divider"><p>or connect with</p></div>
+          <hr class="hr" />
+          <img class="fb" src="pics/fb.png" />
+          <img class="ggl" src="pics/ggl.png" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
